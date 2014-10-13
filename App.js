@@ -32,7 +32,8 @@ module.exports = function App() {
     }
   });
   
-  app.listen(localPort);
-  console.log('Listening on port ' + localPort + ' at ' + new Date());
+  console.log("Getting ready to listen on port" + port);
+  app.listen(port);
+  console.log('Listening on port ' + port + ' at ' + new Date());
   return app;
 };
